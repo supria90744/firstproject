@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-compatible" content="IE-edge">
     <meta name="viewpot" content="width-device-width,initial-scale=1.0">
     <title>EXPERT TECHNO</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/7f981eb46e.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <div id="header">
         <div class="container">
             <nav>
                 <img src="./logo.png"class="logo" width=100px>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICES</a></li>
-                    <li><a href="#">PROJECTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+                    <li><a href="#port">MACHINES</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>LAND SURVEYOR</p>
                 <h1>Hi, I'm <span>Ramesh</span><br> TamilNadu</h1>
+            </div>
             </div>
         </div>
     </div>
@@ -31,38 +36,45 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src=".//images (13).jpeg">
+                    <img src="./images (13).jpeg">
                 </div>
                 <div class="about-col-2">
-                    <h1 class="sub-title"> Trust solution for Land Survey</h1>
+                    <h1 class="sub-title"> Trust Solution</h1>
                     <p>Myself Ramesh.p had completed survey course in Chennai 
                         in 1993 and am having 30 years of experience. Also had done 
                         100+ project all over India.
                     </p>
                     <div class="tab-titles">
-                        <p class="tab-links active-link" oneclick="opentab('Services')">Services</p>
-                        <p class="tab-links" oneclick="opentab('Experience')">Experience</p>
-                        <p class="tab-links" oneclick="opentab('Address')">Address</p>
+                        <p class="tab-links active-link" onclick="opentab('Services')">Services</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Address')">Address</p>
                     </div>
                     <div class="tab-contents active-tab" id="Services">
                         <ul>
                             <li><span>Land-Survey</span><br>Computerised land- survey solution</li>
-                            <li><span>Boundary survey</span><br>With its area calculation</li>
-                            <li><span>Caradom plantation</span><br>With Good Vasthu and so on.</li>
-                            <li><span>Quantity calculation</span><br>With computerised drawings</li>
-                            <li><span>Real estate projects</span><br>With computerised drawings</li>
+                            <li><span>Boundary Survey</span><br>With its area calculation</li>
+                            <li><span>Caradom Plantation</span><br>With Good Vasthu and so on.</li>
+                            <li><span>Quantity Calculation</span><br>With computerised drawings</li>
+                            <li><span>Real Estate projects</span><br>With computerised drawings</li>
                             <li><span>Plots Wood Peg Marking</span><br>With DTCP approval Plan</li>
+                            <li><span>Layout Designing</span></li>
+                            <li><span>FMB Combining</span></li>
+                            <li><span>MSL Level Transfer</span></li>
+                            <li><span>Hills Land survey</span><br>With computerised drawing</li>
+                            <li><span>Building Marking</span></li>
+                            <li><span>North,South Alignment Marking</span></li>
+                            <li><span>House Floor Plan</span><br>With Vasthu</li>
 
                         </ul>
                     </div>
-                    <div class="tab-contents active-tab" id="Experience">
+                    <div class="tab-contents " id="Experience">
                         <ul>
                             <li><span>At Kochi Airport</span><br>2500 acres Boundary Topo-Contour Survey</li>
                             <li><span>At TN,MP,AP</span><br>Spices Bore project</li>
                             <li><span>At kerala</span><br>700 ROB and RUB site Survey </li>
                         </ul>
                     </div>
-                    <div class="tab-contents active-tab" id="Address">
+                    <div class="tab-contents " id="Address">
                         <ul>
                            <li><span>Head Office</span><br>
                                 2nd floor,Unidec Mansion,
@@ -82,6 +94,102 @@
             </div>
         </div>
     </div>
+<!---------project--------->
+<div id="project">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="Projects-list">
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Surveys</h2>
+                <p>Almost surveyed all over India except area like Goa and boundary area</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-tape"></i>
+                <h2>Markings</h2>
+                <p>Have done boundary land markings using tape in TN and Kerala</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-regular fa-building"></i>
+                <h2>House plans</h2>
+                <P>Have done own house plan recently of 4.5 cent with compund walls</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------portfolio------->
+<div id="port">
+    <div class="container">
+        <h1 class="sub-title">Machines</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images (16).jpeg" >
+                <div class="layer">
+                    <h3>DGPS Machine </h3>
+                    <p>Dgps provides real-time data.It is 
+                        a system to privide positional 
+                        correction to GPS signal.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images (17).jpeg">
+                <div class="layer">
+                    <h3>Toshini Tek ETS</h3>
+                    <p>Electronic total station gives the 
+                       average of multiple angle and distance
+                       is measured.</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+            <div class="work">
+                <img src="./IMG_20230728_171208.jpg">
+                <div class="layer">
+                    <h3>Trimple ETS</h3>
+                    <p>It is used in and building construction
+                       that uses electronic transit theodolite 
+                       in conjuction with EDM.</p>
+                <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+</div>
+<!-----------contact---------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>expertramesh38@gamil.com</p>
+                <p><i class="fa-solid fa-phone"></i>7907077653</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+                <a href="./DocScanner 29-Jul-2023 9-45 pm.jpg" download class="btn btn2">Download VC</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="email" placeholder="Your email" required>
+                    <textarea name="Message" cols="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p>Copyright 2023,Made With <i class="fas fa-heart"></i> by Expert Tech</p>
+        </div>
+    </div>
+
+</div>
 <script>
      var tablinks=document.getElementsByClassName("tab-links");
      var tabcontents=document.getElementsByClassName("tab-contents");
@@ -92,10 +200,39 @@
         for(tabcontent of tabcontents){
             tabcontent.classList.remove("active-tab");
         }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
      }
 
 
    
 </script>
+<script>
+    var sidemen=document.getElementById("sidemenu");
+    function openmenu(){
+        sidemen.style.right="0";
+    }
+    function closemenu(){
+        sidemen.style.right="-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycby5FBvnF-aR0v2Toneo21DeAsBTuOvNszXvNfkoAICTLSBJFqUtQjcro8QudlVqUVeg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML="Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML=""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
 </body>
 </html>
